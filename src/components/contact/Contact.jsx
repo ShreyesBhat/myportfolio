@@ -16,11 +16,11 @@ const Contact = () => {
     e.preventDefault();
     emailjs
       .sendForm(
-        "service_rrvnzco",
-        "template_3v5nih4",
+        "service_e7ubu1h",
+        "template_oj6jmse",
         formRef.current,
-        "user_DrriDPTGKO2Zj4RDXCA6W"
-      )
+        "user_4wGL5q9NYJgk2jQIf5mS0"
+      ) //'service_e7ubu1h', 'template_oj6jmse', e.current, 'user_4wGL5q9NYJgk2jQIf5mS0')
       .then(
         (result) => {
           console.log(result.text);
@@ -30,6 +30,7 @@ const Contact = () => {
           console.log(error.text);
         }
       );
+      e.target.reset();
   };
 
   return (
@@ -37,34 +38,34 @@ const Contact = () => {
       <div className="c-bg"></div>
       <div className="c-wrapper">
         <div className="c-left">
-          <h1 className="c-title">Let's discuss your project</h1>
+          <h1 className="c-title">Let's get in touch</h1>
           <div className="c-info">
             <div className="c-info-item">
               <img src={Phone} alt="" className="c-icon" />
-              +1 1234 556 75
+              +1 434 235 0928
             </div>
             <div className="c-info-item">
               <img className="c-icon" src={Email} alt="" />
-              contact@lama.dev
+              shreyes@virginia.edu
             </div>
             <div className="c-info-item">
               <img className="c-icon" src={Address} alt="" />
-              245 King Street, Touterie Victoria 8520 Australia
+              Charlottesville, Virginia
             </div>
           </div>
         </div>
         <div className="c-right">
           <p className="c-desc">
-            <b>What’s your story?</b> Get in touch. Always available for
-            freelancing if the right project comes along. me.
+            <b>Shoot me an email and I'll contact you as soon as possible!</b>
           </p>
           <form ref={formRef} onSubmit={handleSubmit}>
-            <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Name" name="user_name" />
-            <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Subject" name="user_subject" />
-            <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Email" name="user_email" />
-            <textarea style={{backgroundColor: darkMode && "#333"}} rows="5" placeholder="Message" name="message" />
+            <input style={{backgroundColor: darkMode && "#333", color: darkMode && "white"}} type="text" placeholder="Name" name="user_name" />
+            <input style={{backgroundColor: darkMode && "#333", color: darkMode && "white"}} type="text" placeholder="Subject" name="user_subject" />
+            <input style={{backgroundColor: darkMode && "#333", color: darkMode && "white"}} type="email" placeholder="Email" name="user_email" />
+            <textarea style={{backgroundColor: darkMode && "#333", color: darkMode && "white"}} rows="5" placeholder="Message" name="message" />
             <button>Submit</button>
-            {done && "Thank you..."}
+            {done && <p className="thanks">
+              Thank you! I'll get back to you soon </p>}
           </form>
         </div>
       </div>

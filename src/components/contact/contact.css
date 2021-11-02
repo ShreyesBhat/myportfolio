@@ -32,6 +32,15 @@
   width: 80%;
 }
 
+.thanks {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: green;
+}
+
 .c-info-item {
   display: flex;
   align-items: center;
@@ -47,6 +56,7 @@
 }
 
 .c-desc {
+  text-align: relative;
   font-weight: 200;
 }
 

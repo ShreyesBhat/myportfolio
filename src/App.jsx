@@ -4,6 +4,7 @@ import Contact from "./components/contact/Contact";
 import Intro from "./components/intro/Intro";
 import ProductList from "./components/productList/ProductList";
 import Toggle from "./components/toggle/Toggle";
+import Topbar from "./components/topbar/Topbar";
 import { ThemeContext } from "./context";
 
 const App = () => {
@@ -15,11 +16,10 @@ const App = () => {
         backgroundColor: darkMode ? "#222" : "white",
         color: darkMode && "white",
       }}
-    >
+    > <Topbar/>
       <Toggle />
       <Intro />
       <About />
-      <ProductList />
       <Contact />
     </div>
   );

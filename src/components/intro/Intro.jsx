@@ -3,24 +3,24 @@ import Me from "../../img/me.png";
 
 const Intro = () => {
   return (
+    <>
     <div className="i">
       <div className="i-left">
         <div className="i-left-wrapper">
-          <h2 className="i-intro">Hello, My name is</h2>
-          <h1 className="i-name">John Burton</h1>
+          <h2 className="i-intro">Hey there, I'm</h2>
+          <h1 className="i-name">Shreyes Bhat</h1>
           <div className="i-title">
             <div className="i-title-wrapper">
-              <div className="i-title-item">Web Developer</div>
-              <div className="i-title-item">UI/UX Designer</div>
-              <div className="i-title-item">Photographer</div>
-              <div className="i-title-item">Writer</div>
-              <div className="i-title-item">Content Creator</div>
+              <span className="i-title-item">Master's student at University of Virginia</span>
+              <div className="i-title-item">UI/UX designer</div>
+              <div className="i-title-item">Experienced backend developer</div>
+              <div className="i-title-item">Machine learning enthusiast</div>
+              <div className="i-title-item">Professional coffee drinker <span className="emoji-input-css"> ☕</span> </div>
             </div>
           </div>
           <p className="i-desc">
-            I design and develop services for customers of all sizes,
-            specializing in creating stylish, modern websites, web services and
-            online stores.
+            I'm a master's student at University of Virginia. I'm passionate about full stack development and machine learning.
+            I'm currently looking for internship opportunities for Summer 2022.
           </p>
         </div>
         <svg
@@ -85,7 +85,7 @@ const Intro = () => {
         <img src={Me} alt="" className="i-img" />
       </div>
     </div>
-  );
+  </>);
 };
 
 export default Intro;
