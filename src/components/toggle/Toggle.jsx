@@ -14,11 +14,11 @@ const Toggle = () => {
     <div className="t">
       <img src={Sun} alt="" className="t-icon" />
       <img src={Moon} alt="" className="t-icon" />
-      <div
+      <span
         className="t-button"
         onClick={handleClick}
         style={{ left: theme.state.darkMode ? 0 : 25 }}
-      ></div>
+      ></span>
     </div>
   );
 };
