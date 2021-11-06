@@ -16,11 +16,11 @@ const App = () => {
         backgroundColor: darkMode ? "#222" : "white",
         color: darkMode && "white",
       }}
-    > <Topbar/>
-      <Toggle />
-      <Intro />
-      <About />
-      <Contact />
+    > 
+    <Topbar/>
+    <Intro />
+    <About />
+    <Contact />
     </div>
   );
 };
