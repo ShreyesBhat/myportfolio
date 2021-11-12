@@ -6,7 +6,7 @@
 .c-bg {
   width: 20px;
   height: 100%;
-  background-color: #59b256;
+  background-color:teal;
   position: absolute;
 }
 
@@ -38,7 +38,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #59b256;
+  color: teal;
   font-weight: 600;
 }
 
@@ -57,6 +57,8 @@
 }
 
 .c-desc {
+  margin-top: 10pt;
+  position: relative;
   text-align: relative;
   font-weight: 200;
 }
@@ -84,8 +86,9 @@ textarea {
 
 button {
   border: none;
-  padding: 15px;
-  background-color: #59b256;
+  border-radius: 7%;
+  padding: 10px;
+  background-color: teal;
   color: white;
   font-weight: 500;
   cursor: pointer;
