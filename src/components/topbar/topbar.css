@@ -26,7 +26,7 @@ ul {
     background-color: #59b256;
   }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 485px) {
   li a {
     display: none;
   }
